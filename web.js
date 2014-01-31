@@ -1,13 +1,17 @@
 // web.js
 var express = require("express");
 var logfmt = require("logfmt");
+var path = require('path');
 var app = express();
 
-app.use(logfmt.requestLogger());
 
+app.use(logfmt.requestLogger());
+app.use(express.static(path.join(__dirname, 'public')));
+/*
 app.get('/', function(req, res) {
 	res.send('Sheep Facts!');
 });
+*/
 
 app.get('/facts', function(req, res) {
 	var fact = Math.floor(Math.random() * sheepFacts.length)
