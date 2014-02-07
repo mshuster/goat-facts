@@ -1,14 +1,14 @@
 {
-  "name": "sheepfacts",
+  "name": "goatfacts",
   "version": "0.0.0",
-  "description": "Sheep Facts.",
+  "description": "Goat Facts.",
   "main": "web.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "",
   "keywords": [
-    "sheep",
+    "goat",
     "facts"
   ],
   "author": "mshuster",
